@@ -7,7 +7,7 @@ from threading import Thread
 from flask import Flask
 
 # Configure Gemini
-genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
+genai.configure(api_key=os.environ.get('AIzaSyBWRiJ7Nj4a00wvymnlbMRCfXxLhZ17Tn4'))
 model = genai.GenerativeModel('gemini-pro')
 
 # Configure Discord bot
@@ -93,7 +93,7 @@ async def help_command(ctx):
 # Keep Replit alive and run bot
 if __name__ == "__main__":
     keep_alive()
-    token = os.environ.get('DISCORD_TOKEN')
+    token = os.environ.get('MTQ0ODMzOTk3MzI4Njc4OTE5MA.Ggl06z.UvGH_MI6t6gq8XHRrGYPB8cFpsXl4CPy5suANA')
     if not token:
         print("Error: DISCORD_TOKEN not found in secrets")
     else:
